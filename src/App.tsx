@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import ButtonPage from "./pages/ButtonPage";
 import CommonButton from "./containers/button-component";
+import React from "react";
+import TextFieldPage from "./pages/TextFieldPage";
 
 function App() {
   const navigate = useNavigate();
@@ -18,10 +20,15 @@ function App() {
         <CommonButton onClick={() => navigate("/buttonPage")}>
           Button Page
         </CommonButton>
+        <CommonButton onClick={() => navigate("/textfieldPage")}>
+          TextField Page
+        </CommonButton>
       </Stack>
       <Divider></Divider>
+      {/* --------------------------------------------Routes-------------------------------------------------------- */}
       <Routes>
         <Route path="/buttonPage" element={<ButtonPage />} />
+        <Route path="/textfieldPage" element={<TextFieldPage />} />
       </Routes>
     </Box>
   );

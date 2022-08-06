@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import CommonTextField from "../index";
+import CommonTextField from "../CommonTextField";
 import React from "react";
 
 it("should render label text", () => {

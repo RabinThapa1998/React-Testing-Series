@@ -20,7 +20,7 @@ interface CustomTextFieldProps extends OutlinedInputProps {
   placeholder: string;
 }
 
-function index(props: CustomTextFieldProps) {
+function CommonTextField(props: CustomTextFieldProps) {
   const { name, label, placeholder, ...rest } = props;
   return (
     <Box>
@@ -32,4 +32,4 @@ function index(props: CustomTextFieldProps) {
   );
 }
 
-export default index;
+export default CommonTextField;
