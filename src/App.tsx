@@ -5,6 +5,7 @@ import ButtonPage from "./pages/ButtonPage";
 import CommonButton from "./containers/button-component";
 import React from "react";
 import TextFieldPage from "./pages/TextFieldPage";
+import FormPage from "./pages/FormPage";
 
 function App() {
   const navigate = useNavigate();
@@ -23,12 +24,16 @@ function App() {
         <CommonButton onClick={() => navigate("/textfieldPage")}>
           TextField Page
         </CommonButton>
+        <CommonButton onClick={() => navigate("/formPage")}>
+          Form Page
+        </CommonButton>
       </Stack>
       <Divider></Divider>
       {/* --------------------------------------------Routes-------------------------------------------------------- */}
       <Routes>
         <Route path="/buttonPage" element={<ButtonPage />} />
         <Route path="/textfieldPage" element={<TextFieldPage />} />
+        <Route path="/formPage" element={<FormPage />} />
       </Routes>
     </Box>
   );
