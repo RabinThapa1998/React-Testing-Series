@@ -12,7 +12,6 @@ import CommonTextField from "../textfield-component/CommonTextField";
 import CoreInputField from "../textfield-component/core-input-field";
 function Index() {
   const [value, setValue] = useState({ name: "", email: "", password: "" });
-  console.log("🚀 ~ file: index.tsx ~ line 15 ~ Index ~ value", value);
   const [submit, setSubmit] = useState<any>({});
   const handleSubmit = (e: any) => {
     e.preventDefault();
